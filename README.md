@@ -3,13 +3,13 @@
 ## Overview
 
 In this lab, you will create a simple Client-Side routing application with
-__React Router__.
+**React Router**.
 
 ## Objectives
 
-* Practice building an application with __React Router__
-* Access routes using a Navbar with matched routes
-* Visit different "views" in the application by accessing different routes
+-   Practice building an application with **React Router**
+-   Access routes using a Navbar with matched routes
+-   Visit different "views" in the application by accessing different routes
 
 ## React Router App
 
@@ -19,29 +19,28 @@ and links for these 4 pages.
 
 This is what our app should look like when we are done with this lab:
 
-* [Home Page](https://s3.amazonaws.com/learn-verified/react-router-lab-home-page.png)
-* [Movies Page](https://s3.amazonaws.com/learn-verified/react-router-lab-movies-page.png)
-* [Directors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-directors-page.png)
-* [Actors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-actors-page.png)
+-   [Home Page](https://s3.amazonaws.com/learn-verified/react-router-lab-home-page.png)
+-   [Movies Page](https://s3.amazonaws.com/learn-verified/react-router-lab-movies-page.png)
+-   [Directors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-directors-page.png)
+-   [Actors Page](https://s3.amazonaws.com/learn-verified/react-router-lab-actors-page.png)
 
 Let's work through this one component at a time
 
 ### Components
 
 Our `src` folder contains the following:
-```
-src/
-├── data.js
-├── index.js
-|-- containers/
-|   |-- App.js
-└── components/
-    ├── Actors.js
-    ├── Directors.js
-    ├── Home.js
-    ├── Movies.js
-    └── NavBar.js
-```
+
+    src/
+    ├── data.js
+    ├── index.js
+    |-- containers/
+    |   |-- App.js
+    └── components/
+        ├── Actors.js
+        ├── Directors.js
+        ├── Home.js
+        ├── Movies.js
+        └── NavBar.js
 
 All of the file and module imports are done for you, so you just need to focus
 on the JSX for these components.
@@ -52,15 +51,15 @@ Our `index.js` file is completed for us. It loads App as the top level component
 
 #### `data.js`
 
-This file contains seed data for __Actors, Movies & Directors__
+This file contains seed data for **Actors, Movies & Directors**
 
 ## Component Info
 
 #### `App`
 
 This component already contains a `Router` wrapper where we'll include our
-particular routes. App should render our `Navbar` and 4 __React Router__ `Route`
-components with paths to __/, /movies, /directors & /actors__ and has a props of
+particular routes. App should render our `Navbar` and 4 **React Router** `Route`
+components with paths to **/, /movies, /directors & /actors** and has a props of
 the corresponding component. When a user visits the root url, they should see
 the Home component. Since a `Router` wrapper can only wrap one element, use a
 `div` to wrap the `Navbar` and routes. This allows us to apply a CSS class at the App
@@ -68,8 +67,8 @@ component level.
 
 #### `Navbar`
 
-This component needs to render 4 `<NavLink>` components. They will be for __/,
-/movies, /directors, /actors__ <-- in this order(test checks for this).
+This component needs to render 4 `<NavLink>` components. They will be for **/,
+/movies, /directors, /actors** &lt;-- in this order(test checks for this).
 
 #### `Home`
 
